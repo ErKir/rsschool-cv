@@ -19,7 +19,7 @@ Basic knowledge: **JS** (ES6), **Babel**, **SQL**, **Git**, **HTML**, **CSS**, *
 
 ***sortDeps.js*** - takes a list of dependencies as input and returns a list (array) of sorted nodes. <https://ru.hexlet.io/code_reviews/124789>
 
-Dependency management is a very important task in software development. Applications typically involve many third-party components, which in turn may also rely on third-party components. One of the tasks of a dependency manager is to include dependencies in the correct order. Libraries that others depend on should link earlier. The definition of this sequence is reduced to the task of sorting the graph.
+>Dependency management is a very important task in software development. Applications typically involve many third-party components, which in turn may also rely on third-party components. One of the tasks of a dependency manager is to include dependencies in the correct order. Libraries that others depend on should link earlier. The definition of this sequence is reduced to the task of sorting the graph.
 
 ``` js script
 
@@ -32,26 +32,6 @@ export default (deps) => {
     const set = Object.keys(deps).reduce(add, {});
     return Object.keys(set);
 };
-
-```
-
-***convert.js*** is a function that takes an array of a certain structure as input and returns an object obtained from this array.
-<https://ru.hexlet.io/code_reviews/123794>
-
-The array is designed in such a way that it can be used to represent associative arrays. Each value inside it is an array of two elements, where the first element is the key and the second is the value. In turn, if the value is also an array, then it is considered to be a nested representation of the associative array. In other words, any array within the original array is always considered data to be converted to an object.
-
-```js script
-
-const convert = arr => arr.reduce((acc, element) => {
-    if (Array.isArray(element)) {
-        const [key, value] = element;
-        return Array.isArray(value) ? { ...acc, [key]: convert(value) } :
-        { ...acc, [key]: value };
-    }
-    return acc;
-}, {});
-
-export default convert;
 
 ```
 
