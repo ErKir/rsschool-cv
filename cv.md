@@ -62,4 +62,4 @@ Hexlet programming courses: Node.js programmer
 
 ## ENGLISH LEVEL
 
-The level of English is basic (between A2 - A1). I can build short simple sentences, I understand the context of not fast speech. I read technical documentation almost without using a dictionary. *Duolingo is following me, it's everywhere*.
+The level of English is basic (between A2 - A1). I can build short simple sentences, I understand the context of not fast speech. I read technical documentation almost without using a dictionary.
