@@ -1,1 +1,1 @@
-https://ErKir.github.io/rsschool-cv/cv.md
+https://ErKir.github.io/rsschool-cv/
